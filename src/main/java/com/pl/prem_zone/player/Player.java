@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Table(name= "player_stats")
 public class Player {
     @Id
-    @Column(name="name", unique = true)
+    @Column(name="player", unique = true)
     private String name;
     private String nation;
     private String pos;
