@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Table(name= "player_stats")
 public class Player {
     @Id
-    @Column(name="player", unique = true)
+    @Column(name="name", unique = true)
     private String name;
     private String nation;
     private String pos;
@@ -27,6 +27,8 @@ public class Player {
     private Double xag;
     private String team;
 
+    public Player() {
+    }
 
     public Player(String nation, String name, String pos, Integer age, Integer mp, Integer starts, Double min, Double gls, Double ast, Double pk, Double crdy, Double crdr, Double xg, Double npxg, Double xag, String team) {
         this.nation = nation;
